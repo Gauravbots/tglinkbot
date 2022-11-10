@@ -14,6 +14,7 @@ routes = web.RouteTableDef()
 
 @routes.get("/", allow_head=True)
 async def root_route_handler(request):
+    print("Request on /")
     bot_details = await StreamBot.get_me()
     return web.json_response({"status": "running",
                               "maintained_by": "Moksh_b658",
