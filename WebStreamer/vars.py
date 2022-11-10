@@ -14,7 +14,7 @@ class Var(object):
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
     BIN_CHANNEL = int(getenv("BIN_CHANNEL", "-1001713974897"))
-    PORT = int(getenv('PORT', 8000))
+    PORT = int(getenv('PORT', 80))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '65.20.66.251'))
     OWNER_ID = int(getenv('OWNER_ID', '2062513342'))
     NO_PORT = bool(getenv('NO_PORT', True))
