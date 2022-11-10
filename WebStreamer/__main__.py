@@ -47,7 +47,7 @@ async def start_services():
     print('\n')
     print('----------------------- Service Started -----------------------')
     print('                        bot =>> {}'.format((await StreamBot.get_me()).first_name))
-    print(f'                        server ip =>> {Var.URL}'
+    print(f'                        server ip =>> {Var.URL}')
     if Var.ON_HEROKU:
         print('                        app runnng on =>> {}'.format(Var.URL))
     if Var.ON_HEROKU:
