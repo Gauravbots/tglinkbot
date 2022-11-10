@@ -44,6 +44,7 @@ async def start_services():
     await app.setup()
     bind_address = "0.0.0.0" if Var.ON_HEROKU else Var.FQDN
     await web.TCPSite(app, bind_address, Var.PORT).start()
+    print(bind_address, Var.PORT)
     print('\n')
     print('----------------------- Service Started -----------------------')
     print('                        bot =>> {}'.format((await StreamBot.get_me()).first_name))
